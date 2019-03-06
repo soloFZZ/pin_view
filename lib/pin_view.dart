@@ -22,7 +22,7 @@ class PinView extends StatefulWidget {
   final TextStyle dashStyle;
   final InputDecoration inputDecoration;
   final EdgeInsetsGeometry margin;
-  final String splicingSymbol
+  final String splicingSymbol;
 
   PinView(
       {@required this.submit,
