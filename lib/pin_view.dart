@@ -37,7 +37,7 @@ class PinView extends StatefulWidget {
         fontSize: 20.0,
         fontWeight: FontWeight.w500,
       ),
-      this.splicingSymbol = '-'
+      this.splicingSymbol = '-',
       this.inputDecoration:
           const InputDecoration(border: UnderlineInputBorder()),
       this.margin: const EdgeInsets.all(5.0)});
