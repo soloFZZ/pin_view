@@ -22,6 +22,7 @@ class PinView extends StatefulWidget {
   final TextStyle dashStyle;
   final InputDecoration inputDecoration;
   final EdgeInsetsGeometry margin;
+  final String splicingSymbol
 
   PinView(
       {@required this.submit,
@@ -36,6 +37,7 @@ class PinView extends StatefulWidget {
         fontSize: 20.0,
         fontWeight: FontWeight.w500,
       ),
+      this.splicingSymbol = '-'
       this.inputDecoration:
           const InputDecoration(border: UnderlineInputBorder()),
       this.margin: const EdgeInsets.all(5.0)});
@@ -81,7 +83,7 @@ class _PinViewState extends State<PinView> {
   }
 
   Widget _dash() {
-    return Flexible(flex: 1, child: Text("-", style: widget.dashStyle));
+    return Flexible(flex: 1, child: Text(splicingSymbol, style: widget.dashStyle));
   }
 
   @override
